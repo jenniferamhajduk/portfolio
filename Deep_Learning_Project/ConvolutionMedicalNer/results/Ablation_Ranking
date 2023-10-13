@@ -1,0 +1,97 @@
+Ablation: Use LSTM in Proposed rather than GRU
+
+Model: CNN
+Layer: LSTM
+Embedding: word2vec
+Problem Type: Hospital Mortality
+Ablation: Change filter size on proposed model from 32 to 64
+
+Model: CNN
+Layer: GRU
+Embedding: word2vec
+Problem Type: Length of Stay 7
+Ablation: Remove Final Two Conv1D Layers from proposed
+
+Model: CNN
+Layer: GRU
+Embedding: fasttext
+Problem Type: ICU Mortality
+Ablation: Remove Final Conv1D Layer from proposed
+
+Model: CNN
+Layer: GRU
+Embedding: word2vec
+Problem Type: Length of Stay 7
+Ablation: Use LSTM in Proposed rather than GRU
+
+Model: CNN
+Layer: LSTM
+Embedding: word2vec
+Problem Type: ICU Mortality
+Ablation: Remove Final Two Conv1D Layers from proposed
+
+Model: CNN
+Layer: GRU
+Embedding: word2vec
+Problem Type: Length of Stay 7
+Ablation: Remove Final Conv1D Layer from proposed
+
+Model: CNN
+Layer: GRU
+Embedding: fasttext
+Problem Type: Length of Stay 7
+Ablation: Use LSTM in Proposed rather than GRU
+
+Model: CNN
+Layer: LSTM
+Embedding: fasttext
+Problem Type: ICU Mortality
+Ablation: Use LSTM in Proposed rather than GRU
+
+Model: CNN
+Layer: LSTM
+Embedding: fasttext
+Problem Type: Hospital Mortality
+Ablation: Remove Final Two Conv1D Layers from proposed
+
+Model: CNN
+Layer: GRU
+Embedding: fasttext
+Problem Type: Hospital Mortality
+Ablation: Remove Final Conv1D Layer from proposed
+
+Model: CNN
+Layer: GRU
+Embedding: fasttext
+Problem Type: Hospital Mortality
+Ablation: Use LSTM in Proposed rather than GRU
+
+Model: CNN
+Layer: LSTM
+Embedding: concat
+Problem Type: ICU Mortality
+Ablation: Use LSTM in Proposed rather than GRU
+
+Model: CNN
+Layer: LSTM
+Embedding: concat
+Problem Type: Hospital Mortality
+Ablation: Remove Final Two Conv1D Layers from proposed
+
+Model: CNN
+Layer: GRU
+Embedding: concat
+Problem Type: Length of Stay 7
+Ablation: Remove Final Conv1D Layer from proposed
+
+Model: CNN
+Layer: GRU
+Embedding: concat
+Problem Type: Length of Stay 7
+Ablation: Use LSTM in Proposed rather than GRU
+
+Model: CNN
+Layer: LSTM
+Embedding: concat
+Problem Type: Length of Stay 7
+Ablation: Use LSTM
