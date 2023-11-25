@@ -20,7 +20,7 @@ Implementation from a course in machine learning by Free Code Camp
 Problems from Applied Machine Learning from UIUC
 
 ## Petal Width Prediction
-A simple machine learning app using Flask\Python
+A simple machine learning app using Flask\Python. Predict the petal length(s) based on width(s) given. Using the iris dataset from UCI machine learning repository. A fun example.
 
 https://github.com/jenniferamhajduk/AIML_Playground/assets/8963036/1eaf235c-082b-4e3b-9d3f-dc06ea2d4e67
 
