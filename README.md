@@ -21,4 +21,4 @@ Problems from Applied Machine Learning from UIUC
 
 ## Petal Width Prediction
 A simple machine learning app using Flask\Python
-[![Alt text](https://img.youtube.com/vi/)](https://youtu.be/6iN-w0ISK-E)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6iN-w0ISK-E?si=VurM6-LC8pe7xLOB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
