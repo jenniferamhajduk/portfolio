@@ -24,3 +24,19 @@ A simple machine learning app using Flask\Python. Predict the petal length(s) ba
 
 https://github.com/jenniferamhajduk/AIML_Playground/assets/8963036/1eaf235c-082b-4e3b-9d3f-dc06ea2d4e67
 
+## NOAA Buoy
+Time series predictions based on NOAA buoy infromation from 1980 - 2022 - WIP
+
+## Experiments
+A collection of fun things
+
+### HaikuHarbor
+An LLM that produces poetry
+
+### Matrix Multiplication
+Without Numpy
+
+### Naieve Convolution
+Understanding the basic idea of convolution
+
+
