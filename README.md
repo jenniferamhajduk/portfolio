@@ -31,7 +31,7 @@ Time series predictions based on NOAA buoy infromation from 1980 - 2022 - WIP
 A collection of fun things
 
 ### HaikuHarbor
-An LLM that produces poetry
+An Neural Network that produces poetry. Heavily based on https://www.youtube.com/watch?v=kCc8FmEb1nY&t=1173s by Andrej Karpathy. - WIP
 
 ### Matrix Multiplication
 Without Numpy
