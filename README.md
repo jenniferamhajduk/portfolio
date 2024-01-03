@@ -36,7 +36,7 @@ An Neural Network that produces poetry. Heavily based on https://www.youtube.com
 ### Matrix Multiplication
 Without Numpy
 
-### Naieve Convolution
+### Naive Convolution
 Understanding the basic idea of convolution
 
 
