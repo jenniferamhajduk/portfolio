@@ -6,117 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name | Portfolio</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4; /* Light grey background */
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #02457A; /* Navy blue */
+            overflow-x: hidden;
+            padding-top: 20px;
         }
-        header {
-            background: #6a1b9a; /* Deep purple */
-            color: #ffffff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #0779e4 3px solid;
-        }
-        header h1 {
-            padding: 5px 0;
-            margin: 0;
-            text-align: center;
-            font-size: 2em;
-        }
-        nav {
-            background: #00796b; /* Teal */
-            color: #ffffff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 5px;
-        }
-        nav a {
-            color: #ffffff;
-            margin: 0 15px;
+        .sidebar a {
+            padding: 10px 15px;
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+            color: black;
         }
         .main-content {
-            padding: 20px;
-            background-color: #ffffff; /* White background for the content */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+            margin-left: 250px; /* Same as the width of the sidebar */
+            padding: 0px 10px;
         }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section-title {
-            font-size: 25px;
-            color: #333;
-            border-bottom: 2px solid #6a1b9a; /* Deep purple */
-            padding-bottom: 10px;
+        .main-content h2 {
+            color: #02457A; /* Navy blue */
+            margin-top: 0;
         }
         footer {
-            background: #3f51b5; /* Indigo */
-            color: #ffffff;
+            background-color: #02457A; /* Navy blue */
+            color: white;
             text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 0;
         }
-        @media (max-width: 600px) {
-            .container, nav a, header h1 {
-                width: 90%;
-                margin: auto;
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
             }
-            nav a {
-                display: block;
-                margin: 5px auto;
+            .sidebar a {float: left;}
+            .main-content {margin-left: 0;}
+        }
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
             }
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>Your Name - Portfolio</h1>
-        </div>
-    </header>
 
-    <nav>
-        <div class="container">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
+    <div class="sidebar">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
 
     <div class="main-content">
-        <div class="container">
-            <section id="about" class="section">
-                <h2 class="section-title">About Me</h2>
-                <p>Write a brief introduction about yourself, your skills, and your professional background.</p>
-            </section>
+        <h2>Welcome to My Portfolio</h2>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Write a brief introduction about yourself, your skills, and your professional background.</p>
+        </section>
 
-            <section id="projects" class="section">
-                <h2 class="section-title">Projects</h2>
-                <p>Detail your projects here. You can discuss what you learned, the technologies used, and link to the GitHub repos or live sites.</p>
-            </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Detail your projects here. Discuss what you learned, the technologies used, and link to the GitHub repos or live sites.</p>
+        </section>
 
-            <section id="contact" class="section">
-                <h2 class="section-title">Contact</h2>
-                <p>You can find my resume here: https://github.com/jenniferamhajduk/resume and my LinkedIN profile here: https://www.linkedin.com/in/jenniferamhajduk/
-                </p>
-            </section>
-        </div>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Provide your professional contact details here, like your email address and LinkedIn profile.</p>
+        </section>
     </div>
 
     <footer>
-        <div class="container">
-            <p>Copyright &copy; 2023 Your Name</p>
-        </div>
+        <p>Copyright &copy; 2023 Your Name</p>
     </footer>
+
 </body>
 
 </html>
