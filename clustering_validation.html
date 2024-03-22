@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apriori</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light grey background */
+        }
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #02457A; /* Navy blue for sidebar */
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .main-content {
+            margin-left: 250px; /* Same as the width of the sidebar */
+            padding: 20px;
+        }
+        .project {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .project-title {
+            color: #02457A; /* Echoing the navy blue theme */
+            margin: 0 0 10px 0;
+        }
+        /* Additional style for the code block */
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html">Main</a>\        
+        <a href="#projects.html"> Back to Projects</a>
+        <ul><a href="#clustering_validation.html">Clustering Validation (Similarity)</a></ul>
+    </div>
+    <div class="main-content">
+    <div class="container">
+        <h2>Cluster Validation (Similarity)</h2>
+        <ol>
+            <li><strong>Read Data:</strong>
+                <p>Read the input data points from the "sample_input" file.</p>
+            </li>
+            <li><strong>Define Jaccard Similarity Function:</strong>
+                <p>Define a function to calculate the Jaccard similarity between two sets of labels.</p>
+            </li>
+            <li><strong>Define Normalized Mutual Information (NMI) Function:</strong>
+                <p>Define a function to calculate the Normalized Mutual Information between two sets of labels.</p>
+            </li>
+            <li><strong>Parse Data:</strong>
+                <p>Parse the input data and extract cluster labels and predicted labels.</p>
+            </li>
+            <li><strong>Calculate Similarity:</strong>
+                <p>Calculate both Jaccard similarity and NMI similarity between the cluster labels and predicted labels.</p>
+            </li>
+        </ol>        
+        <strong><a href=https://github.com/jenniferamhajduk/portfolio/tree/main/Data_Cleaning_Projects/MP_5>Code</a></strong>
+    </div>
+</body>
+</html>

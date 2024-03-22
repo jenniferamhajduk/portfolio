@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apriori</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light grey background */
+        }
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #02457A; /* Navy blue for sidebar */
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .main-content {
+            margin-left: 250px; /* Same as the width of the sidebar */
+            padding: 20px;
+        }
+        .project {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .project-title {
+            color: #02457A; /* Echoing the navy blue theme */
+            margin: 0 0 10px 0;
+        }
+        /* Additional style for the code block */
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html">Main</a>\        
+        <a href="#projects.html"> Back to Projects</a>
+        <ul><a href="#sequential_mining.html">Sequential Mining</a></ul>
+    </div>
+    <div class="main-content">
+    <div class="container">
+        <h2>Frequent Itemset Mining Algorithm</h2>
+        <ol>
+            <li><strong>Read Data:</strong>
+                <p>Read the transactional data from the "reviews.txt" file.</p>
+            </li>
+            <li><strong>Determine Minimum Support Threshold:</strong>
+                <p>Set a minimum support threshold (minsup), indicating the minimum number of occurrences for an item to be considered frequent.</p>
+            </li>
+            <li><strong>Scan Data and Preprocess:</strong>
+                <p>Iterate over each line of the data file. Split each line into individual words and store them as lists of word strings.</p>
+            </li>
+            <li><strong>Generate Candidate Prefixes:</strong>
+                <p>Iterate over the lists of word strings to extract unique words as candidate prefixes. Store these prefixes in a set (database_prefixes).</p>
+            </li>
+            <li><strong>Count Prefix Occurrences:</strong>
+                <p>Iterate over the dataset prefixes. Count the occurrences of each prefix in the entire dataset. If the count is equal to or greater than the minimum support threshold (minsup), write the prefix and its count to the output file "patterns.txt".</p>
+            </li>
+        </ol>
+        <strong><a href=https://github.com/jenniferamhajduk/portfolio/tree/main/Data_Cleaning_Projects/MP_2>Code</a></strong>
+    </div>
+</body>
+</html>

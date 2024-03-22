@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apriori</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light grey background */
+        }
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #02457A; /* Navy blue for sidebar */
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .main-content {
+            margin-left: 250px; /* Same as the width of the sidebar */
+            padding: 20px;
+        }
+        .project {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .project-title {
+            color: #02457A; /* Echoing the navy blue theme */
+            margin: 0 0 10px 0;
+        }
+        /* Additional style for the code block */
+        .code-container {
+            overflow-x: auto; /* Enable horizontal scrolling */
+            padding: 20px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        pre {
+            white-space: pre-wrap; /* Preserve formatting */
+            tab-size: 4; /* Set tab size */
+            font-family: monospace; /* Use monospace font for code */
+            line-height: 1.5; /* Set line height */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a href="index.html">Main</a>\        
+        <a href="#projects.html"> Back to Projects</a>
+        <ul><a href="#apriori.html">Apriori</a></ul>
+    </div>
+    <div class="main-content">
+    <div class="container">
+        <h2>Apriori Algorithm</h2>
+        <p>The Apriori algorithm is a classic algorithm used in data mining to find frequent itemsets and association rules. Below is the step-by-step description of the Apriori algorithm:</p>
+        <ol>
+            <li><strong>Input Data:</strong>
+                <p>Read the transactional data containing sets of items.</p>
+            </li>
+            <li><strong>Determine Minimum Support Threshold:</strong>
+                <p>Set a minimum support threshold, indicating the minimum number of occurrences for a set of items to be considered frequent.</p>
+            </li>
+            <li><strong>Identify Frequent 1-Itemsets:</strong>
+                <p>Count the occurrences of each individual item in the dataset. Identify frequent 1-itemsets that meet the minimum support threshold.</p>
+            </li>
+            <li><strong>Generate Candidate Itemsets:</strong>
+                <p>For each pair of frequent (k-1)-itemsets, join them to form candidate k-itemsets. Ensure that the generated candidate itemsets are unique.</p>
+            </li>
+            <li><strong>Check Candidate Itemsets Against Dataset:</strong>
+                <p>Scan the dataset to count the occurrences of each candidate itemset. Discard candidate itemsets that do not meet the minimum support threshold.</p>
+            </li>
+            <li><strong>Repeat the Process:</strong>
+                <p>If frequent itemsets are found in the previous step, repeat the process to generate candidate itemsets of the next higher length. Continue until no new frequent itemsets can be found.</p>
+            </li>
+            <li><strong>Output Frequent Itemsets:</strong>
+                <p>Once all frequent itemsets are identified, output them for further analysis.</p>
+            </li>
+        </ol>
+    <strong><a href=https://github.com/jenniferamhajduk/portfolio/tree/main/Data_Cleaning_Projects/MP_1/MP1_1>Code</a></strong>
+    </div>
+</body>
+
+</html>

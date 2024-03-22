@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apriori</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light grey background */
+        }
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #02457A; /* Navy blue for sidebar */
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .main-content {
+            margin-left: 250px; /* Same as the width of the sidebar */
+            padding: 20px;
+        }
+        .project {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .project-title {
+            color: #02457A; /* Echoing the navy blue theme */
+            margin: 0 0 10px 0;
+        }
+        /* Additional style for the code block */
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html">Main</a>\        
+        <a href="#projects.html"> Back to Projects</a>
+        <ul><a href="#naive_bayes.html">Naive Bayes</a></ul>
+    </div>
+    <div class="main-content">
+    <div class="container">
+        <ol>
+            <li><strong>Read Data:</strong>
+                <p>Read the input data points from the CSV file.</p>
+            </li>
+            <li><strong>Preprocess Data:</strong>
+                <p>Parse and preprocess the input data to create dictionaries for training and testing.</p>
+            </li>
+            <li><strong>Calculate Class Probabilities:</strong>
+                <p>Calculate the total values for each class and prior class probabilities with Laplacian smoothing.</p>
+            </li>
+            <li><strong>Calculate Attribute Probabilities:</strong>
+                <p>Calculate the probabilities for each attribute per class.</p>
+            </li>
+            <li><strong>Add Probabilities:</strong>
+                <p>Add the logarithms of attribute probabilities to obtain combined probabilities.</p>
+            </li>
+            <li><strong>Multiply by Prior Class Probabilities:</strong>
+                <p>Multiply the combined probabilities by prior class probabilities to obtain final probabilities.</p>
+            </li>
+            <li><strong>Predict Class Label:</strong>
+                <p>Select the class label with the highest probability as the predicted class.</p>
+            </li>
+        </ol>        
+        <strong><a href=https://github.com/jenniferamhajduk/portfolio/tree/main/Data_Cleaning_Projects/MP_6>Code</a></strong>
+    </div>
+</body>
+</html>
