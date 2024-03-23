@@ -68,41 +68,84 @@
 <body>
 
     <div class="sidebar">
-        <a href="index.html">Main</a>\        
-        <a href="../../projects.html"> Back to Projects</a>
+        <a href="../index.html">Main</a>\        
+        <a href="../projects.html"> Back to Projects</a>
     </div>
     <div class="main-content">
     <div class="container">
-        <h2>Deep Learning for Healthcare Final Project</h2>
-        <p>For Deep Learning for Healthcare, the objective for the project was to recreate a published deep learning model. I found this project one of the most interesting and learned a great deal about the formation and testing of deep learning models.
-            This project is based on the research of Batuhan Bardak and Mehmet Tan in the paper <a href="https://www.sciencedirect.com/science/article/abs/pii/S0933365721001056">Implementation for Improving Clinical Outcome Predictions Using Convolution over Medical Entities with Multimodal Learning</a>
-            and focused on improving the prediction of mortality and lenght of stay for patients using Electronic Health Records. Since these records tend to be sparse and high dimentional, the authors created a model that worked with Named Entity Recognition alongside time-series features to improve prediction accuracy.
+        <h2>Linear Regression</h2>
+        <p>This project was all about learning the PyTorch framework and how to run deep learning models with it. Here you will find projects on Binary- and Multi-Class classification, computer vision, and creating customer datasets/dataloaders. The Custom Datasets notebook contains attemps at training a classification model on benign and malignant melanoma images.
         </p>
         <ol>
-            <li><strong>Overview</strong>
-                <p>The intent of the paper was to improve predictions on two important clinical risk factors for patients: mortality and length of stay. Through the use of Named Entitiy Recognition (NER) and using a CNN model, authors were able to improve these predictions.
-                    The goal of this project was to recreate the successful experiments from the paper and perform ablation studies to determine if different parts of the model could be implemented successfully with different ablations.
-                </p>
+            <li><strong>Exploring the Dynamics of Linear Regression</strong>
+                <p>Linear regression is a foundational technique in data science and machine learning, offering insights into relationships between variables. </p>
             </li>
-            <li><strong>Scope of Reproducibility</strong>
-                <p>My goal was to successfully run the model as a baseline and then implement ablations which changed the learning rate, model type, number of layers and loss function to see how the model performed.</p>
+            <li><strong>Decoding the Workflow</strong>
+                <p>The notebook is structured to provide a comprehensive understanding of linear regression. It starts with an optional link for opening the notebook in Google Colab, offering users a straightforward way to run and modify the code. I also implemented a learning rate, loss function and optimizer appropriate for the model.</p>
             </li>
-            <li><strong>Methodology</strong>
-                <p>While I was able to reuse the original authors code, I did have to update some libraries and implement some changes in the function calls in order for the code to run smoothly. I also had to correct some variables in the code, as might be expected for code that had been implemented even just a couple of years ago.
-                    Overall, the effort to ge the code to run was minimal, yet I had to learn new libraries that I had not worked with before and understand how the code flowed. I was then able to fairly easily run the model with ablations as well.
-                </p>
-            </li>
-            <li><strong>Implementatgion Details</strong>
-                <p>The tools that were used to run the project were Jupyter notebooks, Kera, Sci-Kit, Tensorflow, and Python. Preporcessing. The dataset was taken from the MIMIC-III data made availablie throught the university. I was able to use a powerful computer at home with 
-                    a EVGA 3080 TI FTW GPU, 24 core Ryzen Threadripper 3960X, and 32GB RAM. Each iteration of running the models took a day of continuous running in order to complete. The models included in the reserach were a time series baseline, a Multimodal baseline and the proposed CNN architecture.
-                </p>
-            </li>
-            <li><strong>Conclusion</strong>
-                <p>In my conclusion, many of the results were similar in performance, with the ablations making the model perform somewhat worse (as expected). I experimented with GRU, LSTM, and implementing focal loss as the loss function. </p>
+            <li><strong>Build and Train the Model</strong>
+                <p>I generated some data for the Linear Regression model, created the training and test splits, used matplotlib to plot the data and built and trained the Linear Regression model</p>
             </li>
         </ol>
-    <p><strong><a href=https://github.com/jenniferamhajduk/portfolio/blob/main/Deep_Learning_Project/ConvolutionMedicalNer/report/project_report_jennifer_hajduk.pdf>Project Report</a></strong></p>
-    <p><strong><a href=https://github.com/jenniferamhajduk/portfolio/blob/main/Deep_Learning_Project/ConvolutionMedicalNer/report/project_report_presentation_jennifer_hajduk.pptx>Presentation</a></strong></p>
+    <p><strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Deep_learning_with_Pytorch_Course/Linear_Regression.ipynb">Linear Regression Notebook</a></strong></p>
+    <h2>Classification</h2>
+    <p></p>
+    <ol>
+        <li><strong>Understanding Classification</strong>
+            <p>Classification is the process of predicting the category or class of individual observations within a dataset. It is a type of supervised learning, where a model is trained on a dataset containing observations whose class labels are known.</p>
+        </li>
+        <li><strong>Decoding the Workflow</strong>
+            <p>In the notebook, I performed some preliminary work on data creation using the make_circles function from sklearn. Here is where we may first begin to thinkyyy that non-linearity may aid helpful in accurate classification. A circle model is created using linear layers to experiment with what th eresults would be. 
+                Because we are dealing with binary classification, we use Binary Cross Entropy as the loss function. I optimized with Stochastic Gradient Descent. Training this model resulted in a model that was no better than a coin flip. Adding non-linearity with ReLU increased the accuracy of the model.
+            </non-linear></p>
+        </li>
+    </ol>
+<p><strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Deep_learning_with_Pytorch_Course/Classification.ipynb">Classification Notebook</a></strong></p>
+<h2>Multiclass Classification</h2>
+<p></p>
+<ol>
+    <li><strong>Multiclass Classification</strong>
+        <p>Binary classification is a special case of multiclass classification, where we have more that two classes. This notebook starts with creating samples to plot in order to demonstrate how multiple classes of data can be plotted. The accuracy of a model can be easily calculated so I created an accuracy function. 
+            Here I also work with logits, the raw output of a model and perform softmax during the training loop. I also test the model in the same loop by setting the model to evaluation mode.
+        </p>
+    </li>
+    <li><strong>Decoding the Workflow</strong>
+        <p>In the notebook, I performed some preliminary work on data creation using the make_circles function from sklearn. Here is where we may first begin to think that non-linearity may aid helpful in accurate classification. A circle model is created using linear layers to experiment with what th eresults would be. 
+            Because we are dealing with binary classification, we use Binary Cross Entropy as the loss function. I optimized with Stochastic Gradient Descent. Training this model resulted in a model that was no better than a coin flip. Adding non-linearity with ReLU increased the accuracy of the model.
+        </non-linear></p>
+    </li>
+</ol>
+<p><strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Deep_learning_with_Pytorch_Course/MultiClass_Classification.ipynb">Multiclass Classification Notebook</a></strong></p>
+<h2>Computer Vision</h2>
+<p></p>
+<ol>
+    <li><strong>Understanding Computer Vision</strong>
+        <p>This notebook focuses on computer vision using Convolutional Neural Networks. The model in this notebook uses the CIFAR10 dataset for training and test datasets. After exploring the data and plotting some of the images in the dataset. h
+        </p>
+    </li>
+    <li><strong>Decoding the Workflow</strong>
+        <p>I used the CIFAR10 dataset available from PyTorch. I started with data preparation and exploring the dataset through plotting with matplotlib. I created dataloaders and experimented with image flattening. I used a baselin model, an improve model and a final model architecture using Convolutional layers with ReLU and compared the output.
+            Within the training loop, I also implemented the testing of the model and used a customer function to calculate the accuracy. I then instantiated each model and used the training and evaluation loops to iterate through the data using each model.
+        </p>
+    </li>
+</ol>
+<p><strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Deep_learning_with_Pytorch_Course/Computer_Vision.ipynb">COmputer Vision Notebook</a></strong></p>
+<h2>Custom Datasets</h2>
+<p></p>
+<ol>
+    <li><strong>Using custom datasets - WIP</strong>
+        <p>I used customer datasets in this notebook to help cement what I had learned throughout the course. I chose the cited melanoma data and an implementation of the VGG computer vision model. I resized the dataset images,
+            and plotted them to explore the data. I experimeneted with transforms, specifically the RandomHorizontalFlip and TrivialAugmentWide functions but neither helped with accuracy so I commented this out for now. I also created customer functions in order to create data folders and load them from custom locations.
+            I experimented with several implementations of VGG but have not yet found the best model. I will continue to experiment with models that can improve accuracy.
+        </p>
+    </li>
+    <li><strong>Decoding the Workflow</strong>
+        <p>I will add details on the workflow once I achieve implementating a model that is more accurate that what is implemented now as the workflow may change.
+        </p>
+    </li>
+</ol>
+<p><strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Deep_learning_with_Pytorch_Course/Custom_Datasets.ipynb">Custom Datasets Notebook</a></strong></p>
+    </div>
 
     </div>
 </body>
