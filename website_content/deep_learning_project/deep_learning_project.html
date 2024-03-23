@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apriori</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light grey background */
+        }
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #02457A; /* Navy blue for sidebar */
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .main-content {
+            margin-left: 250px; /* Same as the width of the sidebar */
+            padding: 20px;
+        }
+        .project {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .project-title {
+            color: #02457A; /* Echoing the navy blue theme */
+            margin: 0 0 10px 0;
+        }
+        /* Additional style for the code block */
+        .code-container {
+            overflow-x: auto; /* Enable horizontal scrolling */
+            padding: 20px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        pre {
+            white-space: pre-wrap; /* Preserve formatting */
+            tab-size: 4; /* Set tab size */
+            font-family: monospace; /* Use monospace font for code */
+            line-height: 1.5; /* Set line height */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a href="index.html">Main</a>\        
+        <a href="../projects.html"> Back to Projects</a>
+    </div>
+    <div class="main-content">
+    <div class="container">
+        <h2>Deep Learning for Healthcare Final Project</h2>
+        <p>For Deep Learning for Healthcare, the objective for the project was to recreate a published deep learning model. I found this project one of the most interesting and learned a great deal about the formation and testing of deep learning models.
+            This project is based on the research of Batuhan Bardak and Mehmet Tan in the paper <a href="https://www.sciencedirect.com/science/article/abs/pii/S0933365721001056">Implementation for Improving Clinical Outcome Predictions Using Convolution over Medical Entities with Multimodal Learning</a>
+            and focused on improving the prediction of mortality and lenght of stay for patients using Electronic Health Records. Since these records tend to be sparse and high dimentional, the authors created a model that worked with Named Entity Recognition alongside time-series features to improve prediction accuracy.
+        </p>
+        <ol>
+            <li><strong>Overview</strong>
+                <p>The intent of the paper was to improve predictions on two important clinical risk factors for patients: mortality and length of stay. Through the use of Named Entitiy Recognition (NER) and using a CNN model, authors were able to improve these predictions.
+                    The goal of this project was to recreate the successful experiments from the paper and perform ablation studies to determine if different parts of the model could be implemented successfully with different ablations.
+                </p>
+            </li>
+            <li><strong>Scope of Reproducibility</strong>
+                <p>My goal was to successfully run the model as a baseline and then implement ablations which changed the learning rate, model type, number of layers and loss function to see how the model performed.</p>
+            </li>
+            <li><strong>Methodology</strong>
+                <p>While I was able to reuse the original authors code, I did have to update some libraries and implement some changes in the function calls in order for the code to run smoothly. I also had to correct some variables in the code, as might be expected for code that had been implemented even just a couple of years ago.
+                    Overall, the effort to ge the code to run was minimal, yet I had to learn new libraries that I had not worked with before and understand how the code flowed. I was then able to fairly easily run the model with ablations as well.
+                </p>
+            </li>
+            <li><strong>Implementatgion Details</strong>
+                <p>The tools that were used to run the project were Jupyter notebooks, Kera, Sci-Kit, Tensorflow, and Python. Preporcessing. The dataset was taken from the MIMIC-III data made availablie throught the university. I was able to use a powerful computer at home with 
+                    a EVGA 3080 TI FTW GPU, 24 core Ryzen Threadripper 3960X, and 32GB RAM. Each iteration of running the models took a day of continuous running in order to complete. The models included in the reserach were a time series baseline, a Multimodal baseline and the proposed CNN architecture.
+                </p>
+            </li>
+            <li><strong>Conclusion</strong>
+                <p>In my conclusion, many of the results were similar in performance, with the ablations making the model perform somewhat worse (as expected). I experimented with GRU, LSTM, and implementing focal loss as the loss function. </p>
+            </li>
+        </ol>
+    <p><strong><a href=https://github.com/jenniferamhajduk/portfolio/blob/main/Deep_Learning_Project/ConvolutionMedicalNer/report/project_report_jennifer_hajduk.pdf>Project Report</a></strong></p>
+    <p><strong><a href=https://github.com/jenniferamhajduk/portfolio/blob/main/Deep_Learning_Project/ConvolutionMedicalNer/report/project_report_presentation_jennifer_hajduk.pptx>Presentation</a></strong></p>
+
+    </div>
+</body>
+
+</html>

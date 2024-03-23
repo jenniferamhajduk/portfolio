@@ -53,30 +53,30 @@
 <body>
     <div class="sidebar">
         <a href="index.html">Main</a>\        
-        <a href="projects.html"> Back to Projects</a>
-        <ul><a href="sequential_mining.html">Sequential Mining</a></ul>
+        <a href="../projects.html"> Back to Projects</a>
+        <ul><a href="clustering_validation.html">Clustering Validation (Similarity)</a></ul>
     </div>
     <div class="main-content">
     <div class="container">
-        <h2>Frequent Itemset Mining Algorithm</h2>
+        <h2>Cluster Validation (Similarity)</h2>
         <ol>
             <li><strong>Read Data:</strong>
-                <p>Read the transactional data from the "reviews.txt" file.</p>
+                <p>Read the input data points from the "sample_input" file.</p>
             </li>
-            <li><strong>Determine Minimum Support Threshold:</strong>
-                <p>Set a minimum support threshold (minsup), indicating the minimum number of occurrences for an item to be considered frequent.</p>
+            <li><strong>Define Jaccard Similarity Function:</strong>
+                <p>Define a function to calculate the Jaccard similarity between two sets of labels.</p>
             </li>
-            <li><strong>Scan Data and Preprocess:</strong>
-                <p>Iterate over each line of the data file. Split each line into individual words and store them as lists of word strings.</p>
+            <li><strong>Define Normalized Mutual Information (NMI) Function:</strong>
+                <p>Define a function to calculate the Normalized Mutual Information between two sets of labels.</p>
             </li>
-            <li><strong>Generate Candidate Prefixes:</strong>
-                <p>Iterate over the lists of word strings to extract unique words as candidate prefixes. Store these prefixes in a set (database_prefixes).</p>
+            <li><strong>Parse Data:</strong>
+                <p>Parse the input data and extract cluster labels and predicted labels.</p>
             </li>
-            <li><strong>Count Prefix Occurrences:</strong>
-                <p>Iterate over the dataset prefixes. Count the occurrences of each prefix in the entire dataset. If the count is equal to or greater than the minimum support threshold (minsup), write the prefix and its count to the output file "patterns.txt".</p>
+            <li><strong>Calculate Similarity:</strong>
+                <p>Calculate both Jaccard similarity and NMI similarity between the cluster labels and predicted labels.</p>
             </li>
-        </ol>
-        <strong><a href=https://github.com/jenniferamhajduk/portfolio/tree/main/Data_Cleaning_Projects/MP_2>Code</a></strong>
+        </ol>        
+        <strong><a href=https://github.com/jenniferamhajduk/portfolio/tree/main/Data_Cleaning_Projects/MP_5>Code</a></strong>
     </div>
 </body>
 </html>

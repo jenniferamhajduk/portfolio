@@ -53,35 +53,30 @@
 <body>
     <div class="sidebar">
         <a href="index.html">Main</a>\        
-        <a href="projects.html"> Back to Projects</a>
-        <ul><a href="naive_bayes.html">Naive Bayes</a></ul>
+        <a href="../projects.html"> Back to Projects</a>
+        <ul><a href="sequential_mining.html">Sequential Mining</a></ul>
     </div>
     <div class="main-content">
     <div class="container">
+        <h2>Frequent Itemset Mining Algorithm</h2>
         <ol>
             <li><strong>Read Data:</strong>
-                <p>Read the input data points from the CSV file.</p>
+                <p>Read the transactional data from the "reviews.txt" file.</p>
             </li>
-            <li><strong>Preprocess Data:</strong>
-                <p>Parse and preprocess the input data to create dictionaries for training and testing.</p>
+            <li><strong>Determine Minimum Support Threshold:</strong>
+                <p>Set a minimum support threshold (minsup), indicating the minimum number of occurrences for an item to be considered frequent.</p>
             </li>
-            <li><strong>Calculate Class Probabilities:</strong>
-                <p>Calculate the total values for each class and prior class probabilities with Laplacian smoothing.</p>
+            <li><strong>Scan Data and Preprocess:</strong>
+                <p>Iterate over each line of the data file. Split each line into individual words and store them as lists of word strings.</p>
             </li>
-            <li><strong>Calculate Attribute Probabilities:</strong>
-                <p>Calculate the probabilities for each attribute per class.</p>
+            <li><strong>Generate Candidate Prefixes:</strong>
+                <p>Iterate over the lists of word strings to extract unique words as candidate prefixes. Store these prefixes in a set (database_prefixes).</p>
             </li>
-            <li><strong>Add Probabilities:</strong>
-                <p>Add the logarithms of attribute probabilities to obtain combined probabilities.</p>
+            <li><strong>Count Prefix Occurrences:</strong>
+                <p>Iterate over the dataset prefixes. Count the occurrences of each prefix in the entire dataset. If the count is equal to or greater than the minimum support threshold (minsup), write the prefix and its count to the output file "patterns.txt".</p>
             </li>
-            <li><strong>Multiply by Prior Class Probabilities:</strong>
-                <p>Multiply the combined probabilities by prior class probabilities to obtain final probabilities.</p>
-            </li>
-            <li><strong>Predict Class Label:</strong>
-                <p>Select the class label with the highest probability as the predicted class.</p>
-            </li>
-        </ol>        
-        <strong><a href=https://github.com/jenniferamhajduk/portfolio/tree/main/Data_Cleaning_Projects/MP_6>Code</a></strong>
+        </ol>
+        <strong><a href=https://github.com/jenniferamhajduk/portfolio/tree/main/Data_Cleaning_Projects/MP_2>Code</a></strong>
     </div>
 </body>
 </html>

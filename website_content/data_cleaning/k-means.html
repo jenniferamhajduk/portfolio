@@ -53,33 +53,33 @@
 <body>
     <div class="sidebar">
         <a href="index.html">Main</a>\        
-        <a href="#projects.html"> Back to Projects</a>
-        <ul><a href="#agglomerative_clustering.html">Agglomerative Clustering</a></ul>
+        <a href="../projects.html"> Back to Projects</a>
+        <ul><a href="k-means.html">K-Means</a></ul>
     </div>
     <div class="main-content">
     <div class="container">
-        <h2>Agglomerative Clustering Algorithm</h2>
+        <h2>K-Means Clustering Algorithm</h2>    
         <ol>
             <li><strong>Read Data:</strong>
-                <p>Read the input data points from the standard input (stdin).</p>
+                <p>Read the data points from the "places.txt" file.</p>
+            </li>
+            <li><strong>Set Number of Clusters (k):</strong>
+                <p>Define the number of clusters (k) to be used in the algorithm.</p>
             </li>
             <li><strong>Preprocess Data:</strong>
-                <p>Parse the input data points and store them in a list.</p>
+                <p>Convert the data points into tuples of floating-point numbers.</p>
             </li>
-            <li><strong>Initialize Clusters:</strong>
-                <p>Initialize the clusters using the first n data points.</p>
+            <li><strong>Initialize Centroids:</strong>
+                <p>Initialize empty dictionaries for centroids and clusters. Generate k random centroids by selecting random data points as initial centroids.</p>
             </li>
-            <li><strong>Define Euclidean Distance Function:</strong>
-                <p>Define a function to calculate the Euclidean distance between data points.</p>
+            <li><strong>Define Functions:</strong>
+                <p>Define functions to select random centroids and calculate Euclidean distances between points.</p>
             </li>
-            <li><strong>Main Loop:</strong>
-                <p>Iterate until the number of clusters reaches the desired value (k).</p>
-            </li>
-            <li><strong>Update Clusters:</strong>
-                <p>Calculate the pairwise distances between clusters and merge the two closest clusters.</p>
+            <li><strong>Assign Data Points to Clusters:</strong>
+                <p>For each data point, calculate the Euclidean distance to each centroid. Assign the data point to the cluster associated with the nearest centroid. Write the index of each data point and its assigned cluster to the "clusters.txt" file.</p>
             </li>
         </ol>
-        <strong><a href=https://github.com/jenniferamhajduk/portfolio/tree/main/Data_Cleaning_Projects/MP_4>Code</a></strong>
+        <strong><a href=https://github.com/jenniferamhajduk/portfolio/tree/main/Data_Cleaning_Projects/MP_3>Code</a></strong>
     </div>
 </body>
 </html>

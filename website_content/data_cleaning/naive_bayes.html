@@ -53,30 +53,35 @@
 <body>
     <div class="sidebar">
         <a href="index.html">Main</a>\        
-        <a href="projects.html"> Back to Projects</a>
-        <ul><a href="clustering_validation.html">Clustering Validation (Similarity)</a></ul>
+        <a href="../projects.html"> Back to Projects</a>
+        <ul><a href="naive_bayes.html">Naive Bayes</a></ul>
     </div>
     <div class="main-content">
     <div class="container">
-        <h2>Cluster Validation (Similarity)</h2>
         <ol>
             <li><strong>Read Data:</strong>
-                <p>Read the input data points from the "sample_input" file.</p>
+                <p>Read the input data points from the CSV file.</p>
             </li>
-            <li><strong>Define Jaccard Similarity Function:</strong>
-                <p>Define a function to calculate the Jaccard similarity between two sets of labels.</p>
+            <li><strong>Preprocess Data:</strong>
+                <p>Parse and preprocess the input data to create dictionaries for training and testing.</p>
             </li>
-            <li><strong>Define Normalized Mutual Information (NMI) Function:</strong>
-                <p>Define a function to calculate the Normalized Mutual Information between two sets of labels.</p>
+            <li><strong>Calculate Class Probabilities:</strong>
+                <p>Calculate the total values for each class and prior class probabilities with Laplacian smoothing.</p>
             </li>
-            <li><strong>Parse Data:</strong>
-                <p>Parse the input data and extract cluster labels and predicted labels.</p>
+            <li><strong>Calculate Attribute Probabilities:</strong>
+                <p>Calculate the probabilities for each attribute per class.</p>
             </li>
-            <li><strong>Calculate Similarity:</strong>
-                <p>Calculate both Jaccard similarity and NMI similarity between the cluster labels and predicted labels.</p>
+            <li><strong>Add Probabilities:</strong>
+                <p>Add the logarithms of attribute probabilities to obtain combined probabilities.</p>
+            </li>
+            <li><strong>Multiply by Prior Class Probabilities:</strong>
+                <p>Multiply the combined probabilities by prior class probabilities to obtain final probabilities.</p>
+            </li>
+            <li><strong>Predict Class Label:</strong>
+                <p>Select the class label with the highest probability as the predicted class.</p>
             </li>
         </ol>        
-        <strong><a href=https://github.com/jenniferamhajduk/portfolio/tree/main/Data_Cleaning_Projects/MP_5>Code</a></strong>
+        <strong><a href=https://github.com/jenniferamhajduk/portfolio/tree/main/Data_Cleaning_Projects/MP_6>Code</a></strong>
     </div>
 </body>
 </html>
