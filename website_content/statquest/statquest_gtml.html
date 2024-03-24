@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apriori</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light grey background */
+        }
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #02457A; /* Navy blue for sidebar */
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .main-content {
+            margin-left: 250px; /* Same as the width of the sidebar */
+            padding: 20px;
+        }
+        .project {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .project-title {
+            color: #02457A; /* Echoing the navy blue theme */
+            margin: 0 0 10px 0;
+        }
+        /* Additional style for the code block */
+        .code-container {
+            overflow-x: auto; /* Enable horizontal scrolling */
+            padding: 20px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        pre {
+            white-space: pre-wrap; /* Preserve formatting */
+            tab-size: 4; /* Set tab size */
+            font-family: monospace; /* Use monospace font for code */
+            line-height: 1.5; /* Set line height */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a href="../../index.html">Main</a>\        
+        <a href="../machine_learning_projects.html"> Back to Projects</a>
+    </div>
+    <div class="main-content">
+    <div class="container">
+        <h2>StatQuest Guide to Machine Learning by Josh Starmer</h2>
+        <p>This project is all about josh Starmer's StateQuest Guide to Machine Learning. I first learned about Josh from his Youtube videos. Although his videos are extremely entertaining, make no mistake that Josh is an expert in his field an masterfully breaks down each topic into digestible pieces. I took some time to code ablong with the examples in the book.
+            The code that I wrote for this project is linear in nature and not functionalized or optimized. This is becuase I learned some of these topics as I was coding them and wanted to lay out the logic plainly so that I could be sure to master them.
+        </p>
+    <h2>Continuous Probability Distribution</h2>
+    <p>Gaussian distribution (also known as normal distribution) are known for their ability to capture natural occurrence in real world data. The mean and the variance of the data define this type of model. Gaussian distributions are also known for their bell shaped curve
+        with 68% of the data falling within the one standard deviation, 95% within two standard deviations, and 99.7 falling within 3 standard deviations. Applications in Machine Learning include anomaly detection, feature scaling and dimensionality reduction.
+    </p>
+    <strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Guide_to_Machine_Learning/continuous_prob_distribution/gaussian.py">Gaussian Distribution Formula</a></strong>
+    <h2>Decision Trees</h2>
+    <p>Decision trees are a non-parametric, supervised learning method used in machine learning for both classification and regression tasks. They employ a splitting criteria in order to increase the homogeneity of the child nodes. 
+        They can be used in classification and regression tasks in a wide range of domains. Decision trees are able to handle non-linear data and serve as a foudnation for many ensemble method models.
+    </p>
+    <strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Guide_to_Machine_Learning/decision_trees/classification_tree.py">Classification Trees</a></strong>
+    <p><strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Guide_to_Machine_Learning/decision_trees/regression_tree.py">Regression Trees</a></strong></p>
+    <h2>Sum of Squared Residuals/Mean Squared Error</h2>
+    <p>When designing a machine learning model, you must decide how to measure the the trustworthiness of the model's outputs. Typically a loss function is used to measure the differnce between the model output and the observed data. Two of the simplest functions that are important to note are 
+        the Sum of Squared Residuals and the Mean Squared Error. 
+    </p>
+    <strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Guide_to_Machine_Learning/SSR/SSR_MSE.py">SSR and MSE</a></strong>
+    <h2>Discrete Probability Distributions</h2>
+    <p>The Binomial Distribution is used in statistics to facilitate determining probabilities when collecting more information would be cost prohibitive or time consuming. If we are to use a histogram in order to categorize discrete data, then the Binomial Distribution can help us to fill in the blanks when bins are empty, using mathematical expression. The Binomial Distribution is used for determining probabilities discrete distributions using binary outcomes.
+        When determining the probabilistic outcomes of events that happen in discrete units of time, use Poisson Distribution.
+    </p>
+    <strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Guide_to_Machine_Learning/discrete_prob_distributions/binomial_calc.py">Binomial</a></strong>
+    <p><strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Guide_to_Machine_Learning/discrete_prob_distributions/poisson_calc.py">Poisson</a></strong></p>
+    <h2>Gradient Descent</h2>
+    <p>A collection of derivatives of the same function but with respect to different parameters is called a gradient. Gradient Descent is used to find the optimal parameter that fit the data to a model. Gradient descent begins with a guess and then optimizes until the cost function in minimized.
+    </p>
+    <strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Guide_to_Machine_Learning/gradient_descent/gradient_descent.py">Gradient Descent</a></strong>
+    <p><strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Guide_to_Machine_Learning/gradient_descent/gradient_descent_two_parameters.py">Gradient Descent - Two Parameters</a></strong></p>
+    <h2>Naive Bayes</h2>
+    <p>Naive Bayes algorithm is a very simple, yet notably effective method of classification. It is used to predict the label of given data. Naive Bayes is called so because is assumes no prior knowledge of conditions that might be related to the current event. Naive
+        Bayes is extremely fast compared to more sophisticated models is and easy to implement. Here is another example of how I used simple coding without much optimization in order to master the topic.</p>
+    <p><strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Guide_to_Machine_Learning/naive_bayes/gaussian_naive_bayes.py">Gaussian Naive Bayes</a></strong></p>
+    <strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Guide_to_Machine_Learning/naive_bayes/multinomial_naive_bayes.py">Multinomial Naive Bayes</a></strong>
+    <h2>Regularization</h2>
+    <p>Regularization is a techniques used to prevent overfitting. By introducing a penaly to the loss term. Adding this penalty should may produce less accuracy on the training data, but increase the model's ability to generalize to unseen data.</p>
+    <p><strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Guide_to_Machine_Learning/regularization/regularization.py">Regularization</a></strong></p>
+    <h2>Sensitivity and Specificity</h2>
+    <p>Sensitivity and specificity are two statistical measures of the performance of a binary classification test. Sensitivity (also known as Recall or True Positive Rate) measure the proportion of actual positive that are correctly classified. Specificity (also known as True Negative Rate) measure the
+        proportion of actual negatives that are correctly classified.</p>
+    <p><strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Guide_to_Machine_Learning/sensitivity_specificity/sensitivity_specificity.py">Sensitivity and Specificity</a></strong></p>
+    <h2>Support Vector Machines</h2>
+    <p>Support Vector machines are a set of supervised learning methods used for classification, regression, and outliers detection. SVMs used for binary classification are renowned for their effectiveness in high-dimensional spaces.</p>
+    <p><strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/Guide_to_Machine_Learning/support_vector_machines/svm.ipynb">Support Vector Machine</a></strong></p>
+</div>
+</body>
+
+</html>
