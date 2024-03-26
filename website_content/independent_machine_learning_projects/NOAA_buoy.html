@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apriori</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light grey background */
+        }
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #02457A; /* Navy blue for sidebar */
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .main-content {
+            margin-left: 250px; /* Same as the width of the sidebar */
+            padding: 20px;
+        }
+        .project {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .project-title {
+            color: #02457A; /* Echoing the navy blue theme */
+            margin: 0 0 10px 0;
+        }
+        /* Additional style for the code block */
+        .code-container {
+            overflow-x: auto; /* Enable horizontal scrolling */
+            padding: 20px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        pre {
+            white-space: pre-wrap; /* Preserve formatting */
+            tab-size: 4; /* Set tab size */
+            font-family: monospace; /* Use monospace font for code */
+            line-height: 1.5; /* Set line height */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a href="../../index.html">Main</a>\        
+        <a href="../machine_learning_projects.html"> Back to Projects</a>
+    </div>
+    <div class="main-content">
+    <div class="container">
+        <h2>Exploring LSTM, GRU and Convolution with NOAA buoy data</h2>
+        <p>This projects using time series prediction in order to create a model capapble of predicting water temperature. I use single and multivariate data to create several models based on LSTM, GRU and a Convolutional Neural Network. 
+            I perform exploratory data analysis on the data, handling missing values and renaming columns for clarity. I also performed some feature engineering by creating new time-related features to capture the cyclical nature of a 24 hour day. I used sin and cos
+            to help the modle understand the cyclical features. I performed single variable prediction and multivairate time series forecasting on the data using different LSTM, GRU and Convolutional models. I made some notes on the quantity of parameters in each model as I continued to code them.
+            The notebook includes comparisons between single-variable and multivariate models, exploring how different input features and model architectures affect prediction accuracy.
+
+        </p>
+    <p><strong><a href="https://github.com/jenniferamhajduk/portfolio/blob/main/NOAA_buoy/buoy.ipynb">LSTM, GRU, and Convolution on NOAA buoy data</a></strong></p>
+    
+</div>
+
+    </div>
+</body>
+
+</html>
