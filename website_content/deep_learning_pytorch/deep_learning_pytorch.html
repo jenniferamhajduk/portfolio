@@ -76,7 +76,7 @@
         <h2>Linear Regression</h2>
         <p>This project was all about learning the PyTorch framework and how to run deep learning models with it. Here, you will find projects on Binary- and Multi-Class classification, computer vision, and creating custom datasets/dataloaders. The Custom Datasets notebook contains attempts at training a classification model on benign and malignant melanoma images.</p>
         <ol>
-            <li><strong>Exploring the Dynamics of Linear Regression</strong>
+            <li>
                 <p>Linear regression is a foundational technique in data science and machine learning, offering insights into relationships between variables. The notebook is structured to provide a comprehensive understanding of linear regression. It starts with an optional link for opening the notebook in Google Colab, offering users a straightforward way to run and modify the code. I also implemented a learning rate, loss function and optimizer appropriate for the model.
                     I generated some data for the Linear Regression model, created the training and test splits, used matplotlib to plot the data and built and trained the Linear Regression model
                 </p>
@@ -85,7 +85,7 @@
     <h2>Classification</h2>
     <p></p>
     <ol>
-        <li><strong>Understanding Classification</strong>
+        <li>
             <p>Classification is the process of predicting the category or class of individual observations within a dataset. It is a type of supervised learning, where a model is trained on a dataset containing observations whose class labels are known.
                 In the notebook, I performed some preliminary work on data creation using the make_circles function from sklearn. Here is where we may first begin to think that non-linearity may aid helpful in accurate classification. A circle model is created using linear layers to experiment with what the results would be. 
                 Because we are dealing with binary classification, we use Binary Cross Entropy as the loss function. I optimized with Stochastic Gradient Descent. Training this model resulted in a model that was no better than a coin flip. Adding non-linearity with ReLU increased the accuracy of the model.
@@ -96,7 +96,7 @@
 <h2>Multiclass Classification</h2>
 <p></p>
 <ol>
-    <li><strong>Multiclass Classification</strong>
+    <li>
         <p>Binary classification is a special case of multiclass classification, where we have more that two classes. This notebook starts with creating samples to plot in order to demonstrate how multiple classes of data can be plotted. The accuracy of a model can be easily calculated so I created an accuracy function. 
             Here I also work with logits, the raw output of a model and perform softmax during the training loop. I also test the model in the same loop by setting the model to evaluation mode.
             After creating the data, I created a model with a hidden layer and used the CrossEntropyLoss function. I used the Adam optimizer and trained the model. I then tested the model and calculated the accuracy. I also plotted the data and the model's predictions.
@@ -107,7 +107,7 @@
 <h2>Computer Vision</h2>
 <p></p>
 <ol>
-    <li><strong>Understanding Computer Vision</strong>
+    <li>
         <p>This notebook focuses on computer vision using Convolutional Neural Networks. The model in this notebook uses the CIFAR10 dataset for training and test datasets. After exploring the data and plotting some of the images in the dataset. 
             I used the CIFAR10 dataset available from PyTorch. I started with data preparation and exploring the dataset through plotting with matplotlib. I created dataloaders and experimented with image flattening. I used a baselin model, an improve model and a final model architecture using Convolutional layers with ReLU and compared the output.
             Within the training loop, I also implemented the testing of the model and used a custom function to calculate the accuracy. I then instantiated each model and used the training and evaluation loops to iterate through the data using each model.
@@ -118,7 +118,7 @@
 <h2>Custom Datasets</h2>
 <p></p>
 <ol>
-    <li><strong>Using custom datasets</strong>
+    <li>
         <p>I used custom datasets in this notebook to help cement what I had learned throughout the course. I chose the cited melanoma data and an implementation of the Resnet model. I resized the dataset images, implemented a transform to prevent overfitting,
             and plotted them to explore the data. I also created a custom dataset class and a custom dataloader. I then created a model, implemented the training loop and tested the model. I also calculated the accuracy of the model. I implemented a Resnet model after many hours of discovering PyTorch datasets. 
             By modifying the model, I was able to achieve a 90% accuracy rate.</p>
