@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apriori</title>
+    <title>Deep Learning with PyTorch</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -74,8 +74,7 @@
     <div class="main-content">
     <div class="container">
         <h2>Linear Regression</h2>
-        <p>This project was all about learning the PyTorch framework and how to run deep learning models with it. Here you will find projects on Binary- and Multi-Class classification, computer vision, and creating custom datasets/dataloaders. The Custom Datasets notebook contains attempts at training a classification model on benign and malignant melanoma images.
-        </p>
+        <p>This project was all about learning the PyTorch framework and how to run deep learning models with it. Here, you will find projects on Binary- and Multi-Class classification, computer vision, and creating custom datasets/dataloaders. The Custom Datasets notebook contains attempts at training a classification model on benign and malignant melanoma images.</p>
         <ol>
             <li><strong>Exploring the Dynamics of Linear Regression</strong>
                 <p>Linear regression is a foundational technique in data science and machine learning, offering insights into relationships between variables. </p>
@@ -133,9 +132,8 @@
 <p></p>
 <ol>
     <li><strong>Using custom datasets</strong>
-        <p>I used custom datasets in this notebook to help cement what I had learned throughout the course. I chose the cited melanoma data and an implementation of the VGG computer vision model. I resized the dataset images,
-            and plotted them to explore the data. I experimeneted with transforms, specifically the RandomHorizontalFlip and TrivialAugmentWide functions but neither helped with accuracy so I commented this out for now. I also created custom functions in order to create data folders and load them from custom locations.
-            I experimented with several implementations of VGG but have not yet found the best model. I will continue to experiment with models that can improve accuracy.
+        <p>I used custom datasets in this notebook to help cement what I had learned throughout the course. I chose the cited melanoma data and an implementation of the Resnet model. I resized the dataset images, implemented a transform to prevent overfitting,
+            and plotted them to explore the data. I also created a custom dataset class and a custom dataloader. I then created a model, implemented the training loop and tested the model. I also calculated the accuracy of the model.
         </p>
     </li>
     <li><strong>Decoding the Workflow</strong>
